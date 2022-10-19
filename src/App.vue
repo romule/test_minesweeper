@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="logo-header">
+    <img width="100" height="100" alt="Vue logo" src="./assets/war-zone.png" />
+    <h1>MineSweeper</h1>
+  </div>
+  <MineSweeper msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MineSweeper from "./components/MineSweeper.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    MineSweeper,
+  },
+};
 </script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 </style>
